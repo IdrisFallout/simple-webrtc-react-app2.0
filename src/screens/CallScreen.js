@@ -23,7 +23,7 @@ function CallScreen() {
       data: data,
     });
   };
-
+// eslint-disable-next-line
   const startConnection = () => {
     navigator.mediaDevices
       .getUserMedia({
@@ -145,6 +145,7 @@ function CallScreen() {
     return function cleanup() {
       pc?.close();
     };
+    // eslint-disable-next-line
   }, [pc, startConnection]);
 
   return (

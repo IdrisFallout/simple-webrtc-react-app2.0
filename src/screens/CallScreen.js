@@ -145,7 +145,7 @@ function CallScreen() {
     return function cleanup() {
       pc?.close();
     };
-  }, []);
+  }, [pc, startConnection]);
 
   return (
     <div>
